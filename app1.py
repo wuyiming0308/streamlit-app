@@ -132,7 +132,7 @@ if 'output' in st.session_state:
     st.download_button(
         label='Download',
         data=convert_df_to_csv(st.session_state.output),
-        file_name=st.session_state.urlInput[-15:-9]+'.csv',
+        file_name=st.session_state.urlInput[-16:-9]+'.csv',
         mime='text/csv',
     )
 else:
