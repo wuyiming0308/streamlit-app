@@ -1,8 +1,3 @@
-from cProfile import label
-from faulthandler import disable
-from gc import callbacks
-from tabnanny import check
-from turtle import onclick
 import zipfile
 import streamlit as st
 from zipfile import ZipFile
