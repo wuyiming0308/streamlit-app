@@ -27,7 +27,7 @@ def retrieve_and_process():
     if os.path.exists('./DownloadedFile.zip'):
         os.remove('./DownloadedFile.zip')
     if os.path.exists('DownloadedFile'):
-        os.remove('DownloadedFile')
+        os.rmtree('DownloadedFile')
 
     # specifiying url of zip file
     #url = "https://www.dropbox.com/s/0n0u003pk5avp95/321529.zip?dl=1"
