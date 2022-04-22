@@ -95,7 +95,7 @@ def validateUrl():
 
 
 def appendExampleUrl():
-    st.session_state.urlInput = 'https://www.dropbox.com/s/0n0u003pk5avp95/321529.zip?dl=1'
+    st.session_state.urlInput = 'https://www.dropbox.com/s/3t5qywybz29sc6k/4223948.zip?dl=1'
     validateUrl()
 
 
