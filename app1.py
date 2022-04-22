@@ -1,3 +1,5 @@
+from asyncore import write
+from distutils.log import error
 import zipfile
 import streamlit as st
 from zipfile import ZipFile
@@ -6,6 +8,7 @@ import os
 import pandas as pd
 import os
 import validators
+import shutil
 
 # Initialize
 if 'validUrl' not in st.session_state:
@@ -26,8 +29,8 @@ def retrieve_and_process():
 
     if os.path.exists('./DownloadedFile.zip'):
         os.remove('./DownloadedFile.zip')
-    if os.path.exists('DownloadedFile'):
-        os.rmtree('DownloadedFile')
+    if os.path.exists('./DownloadedFile'):
+        shutil.rmtree('./DownloadedFile', ignore_errors=True)
 
     # specifiying url of zip file
     #url = "https://www.dropbox.com/s/0n0u003pk5avp95/321529.zip?dl=1"
